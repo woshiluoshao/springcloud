@@ -1,0 +1,10 @@
+#程序启动时默认先加载bootstrap.yml再加载application.yml
+#该配置可以直接从配置中心目录下获取到name+profile中匹配的配置文件
+#uri是整个配置中心的启动地址
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9004
+      profile: test
+      name: eureka-server-node
+      label: master
