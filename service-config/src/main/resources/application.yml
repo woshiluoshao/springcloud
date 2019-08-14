@@ -1,0 +1,15 @@
+server:
+  port: 9004
+
+spring:
+  application:
+    name: service-config
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/woshiluoshao/springcloud.git
+          search-paths: service-spring-config
+          username: 2394775223@qq.com
+          password: mlg19911201
