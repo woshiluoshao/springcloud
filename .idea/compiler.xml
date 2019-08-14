@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
         <module name="microcloud" />
+        <module name="service-config" />
         <module name="service-consumers" />
+        <module name="service-hystrix-dashboard" />
         <module name="service-provider" />
       </profile>
     </annotationProcessing>
@@ -20,8 +22,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="service-config" options="-parameters" />
       <module name="service-consumer" options="-parameters" />
       <module name="service-consumers" options="-parameters" />
+      <module name="service-hystrix-dashboard" options="-parameters" />
       <module name="service-provider" options="-parameters" />
       <module name="servie-consumer" options="-parameters" />
     </option>
