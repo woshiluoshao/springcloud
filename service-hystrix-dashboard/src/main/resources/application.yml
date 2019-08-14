@@ -1,0 +1,19 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: service-hystrix
+
+turbine:
+  app-config: service-provider,service-consumers
+  cluster-name-expression: new String("default")
+  instanceUrlSuffix: hystrix.stream
+  aggregator:
+    cluster-config: default
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
